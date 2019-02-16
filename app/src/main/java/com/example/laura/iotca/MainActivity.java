@@ -38,13 +38,8 @@ public class MainActivity extends AppCompatActivity implements Response.Listener
         // Instantiate the RequestQueue.
         mQueue = CustomVolleyRequestQueue.getInstance(this.getApplicationContext())
                 .getRequestQueue();
-        String url = "https://dweet.io/dweet/for/LauraPi";
-            if (url.equals("https://dweet.io/dweet/for/LauraPi?hello")){
-
-            }
-            else{
-
-            }
+        String url = "https://dweet.io/dweet/for/LauraPi?2";
+          
         final CustomJSONObjectRequest jsonRequest = new CustomJSONObjectRequest(Request.Method
                 .GET, url,
                 new JSONObject(), this, this);
